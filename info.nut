@@ -29,7 +29,7 @@ class FMainClass extends GSInfo {
 	function GetDate()			{ return SELF_PUBLISH_DATE; }
 	function CreateInstance()	{ return "MainClass"; }
 	function GetShortName()		{ return "ReGS"; }
-	function GetAPIVersion()	{ return "1.3"; }
+	function GetAPIVersion()	{ return "15"; }
 	function GetURL()			{ return "https://github.com/BasicBeluga/RemoteGS"; }
 
 	function GetSettings() {

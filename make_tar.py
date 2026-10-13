@@ -29,6 +29,6 @@ if(version == -1):
 dir_name = gs_pack_name + "-v" + version
 tar_name = dir_name + ".tar"
 os.system("mkdir " + dir_name);
-os.system("cp -Ra *.nut readme.txt LICENSE changelog.txt lang " + dir_name);
+os.system("cp -Ra *.nut README.md LICENSE lang " + dir_name);
 os.system("tar -cf " + tar_name + " " + dir_name);
 os.system("rm -r " + dir_name);

@@ -182,7 +182,7 @@ class AdminPort
 					arg_value = arg_value | sym.symbol;
 				}
 			}
-		} else if (typeof(arg) == "integer" || typeof(arg) == "boolean") {
+		} else if (typeof(arg) == "integer" || typeof(arg) == "bool") {
 			arg_value = arg;
 		} else {
 			throw APException("Unsupported argument type: " + typeof(arg) + " of argument \"" + arg_num + "\"");
@@ -202,7 +202,7 @@ class AdminPort
 			local correct_type = null;
 
 			if (func.arg_def[i] == 'i') correct_type = "integer";
-			if (func.arg_def[i] == 'b') correct_type = "boolean";
+			if (func.arg_def[i] == 'b') correct_type = "bool";
 			else if (func.arg_def[i] == 's') correct_type = "string";
 
 			if (func.arg_def[i] != '.' && (correct_type == null || arg_type != correct_type)) {

@@ -5,7 +5,7 @@ from subprocess import Popen,PIPE
 
 # == Settings ==
 openttd_path = "."
-gs_path = "/openttd/build/generated/script/api/game"
+gs_path = "./build/generated/script/api/game"
 # ==============
 
 # Open output file before changing current path
@@ -23,7 +23,7 @@ os.chdir(openttd_path)
 # 		version = r.group(1)
 # 		break
 
-version = os.environ.get("BRANCH")
+version = "jgrpp-0.73.4"
 
 # -- Print header in output .nut file
 f_out.write("/*\n")
@@ -36,7 +36,7 @@ f_out.write("g_symbols <- [\n")
 
 # -- Scan all .sq files for the GS API in the OpenTTD source code
 os.chdir(gs_path)
-for file_name in glob.glob("*.sq"):
+for file_name in glob.glob("*.sq.hpp"):
 
 	class_name = None
 	has_no_member = True
