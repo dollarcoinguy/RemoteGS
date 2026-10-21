@@ -1,6 +1,6 @@
 # RemoteGS
 
-![Version](https://img.shields.io/badge/version-4.0.0-blue.svg)
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![License](https://img.shields.io/badge/license-GPL--2.0-green.svg)
 ![OpenTTD GS API](https://img.shields.io/badge/OpenTTD%20GS%20API-15-orange.svg)
 
@@ -8,7 +8,7 @@ Original Author: Zuu
 Fork Author: Ian Earle  
 License: GPL 2  
 
-See [CHANGELOG.md](CHANGELOG.md) for recent release notes and changelog details.
+See [CHANGELOG.md](CHANGELOG.md) for recent release notes and changelog details. Versioning has restarted at 1.0 to clearly identify the split from upstream RemoteGS numbering conventions.
 
 Index:
   1. When is this script useful? 
